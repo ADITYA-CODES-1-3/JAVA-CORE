@@ -17,6 +17,18 @@ public class Task_5 {
         m.teamSize = 5;
         m.displayCommonInfo();
         m.displayManagerInfo();
+
+        System.out.println("---------------------------------");
+        System.out.println("Salary Comparison : ");
+        if(m.Salary>d.Salary){
+            System.out.print(m.name);
+            System.out.println(" is a Manager Earns More than Developer");
+        }
+        else{
+            System.out.print(d.name);
+            System.out.println(" is a Developer Earns More than Manager");
+        }
+
     }
 }
 class Employee{

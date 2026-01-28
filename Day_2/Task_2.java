@@ -3,7 +3,8 @@ package Day_2;
 public class Task_2 {
     public static void main(String[] args) {
         Circle C = new Circle();
-        C.calculateArea(3,4);
+        Rectangle r = new Rectangle();
+        r.calculateArea(3,4);
         C.calculateArea(3);
     }
 }
@@ -19,7 +20,7 @@ class Rectangle extends Shape{
     }
 }
 
-class Circle extends Rectangle{
+class Circle extends Shape{
 
     void calculateArea(float r){
         area = r*r;
